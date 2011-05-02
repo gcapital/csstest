@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>F2E Quiz</title>
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/q1.css" type="text/css" />
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/q2.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/q2.js"></script>
+<style>
+</style>
+</head>
+<body>
+    <div>
+        <h1>Q1: 利用HTML和CSS完成和下圖一樣的畫面</h1>
+        <h2>注意：</h2>
+        <ul>
+            <li>盡可能使用CSS3技巧</li>
+            <li>盡量使用減少http request的方式（如：css sprites）</li>
+            <li>字型可忽略</li>
+            <li>請編輯//globales/templates/q1.html以及./media/css/q1.css檔案</li>
+            <li>圖片請存放在images資料夾底下，亦可自行新增資料夾於images底下</li>
+            <li>圖片使用路徑："http://localhost:8000/media/images/xxx.png"</li>
+        </ul>
+        <img src="{{MEDIA_URL}}images/q1.png">
+        <h1>Q1 Answer:</h1>
+        <div>
+        {% include "q1.html" %}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h1>Q2: 利用HTML、CSS和Javascript完成和下圖一樣的畫面</h1>
+        <h2>注意：</h2>
+        <ul>
+            <li>盡可能使用CSS3技巧</li>
+            <li>撰寫Javascript互動，填寫內容後按Comment可新增一筆在下面，最新的在最上面。</li>
+            <li>只需改變內容即可，大頭照、使用者名稱、like按鈕和時間都不需改變</li>
+            <li>字型可忽略</li>
+            <li>請編輯//globales/templates/q2.html以及./media/css/q2.css檔案</li>
+            <li>圖片請存放在images資料夾底下，亦可自行新增資料夾於images底下</li>
+            <li>圖片使用路徑："http://localhost:8000/media/images/xxx.png"</li>
+        </ul>
+        <img src="{{MEDIA_URL}}images/q2.png">
+        <h1>Q2 Answer:</h1>
+        <div>
+        {% include "q2.html" %}
+        </div>
+    </div>
+</body>
+</html>
