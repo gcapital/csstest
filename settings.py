@@ -78,6 +78,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
+
 ROOT_URLCONF = 'f2e_quiz.urls'
 
 TEMPLATE_DIRS = (
